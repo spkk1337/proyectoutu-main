@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Sistema de Garantías</title>
+    <link rel="stylesheet" href="styleslg.css">
+</head>
+<body>
+
+
+<header class="navbar">
+    <div class="contenedor">
+        <a class="marca" href="../index.html">
+            <img src="../img/logo2.png" width="150" height="150" alt="logopagina">
+        </a>
+    </div>
+</header>
+
+
+<main class="login-principal">
+    <section class="login-card">
+        <div class="login-header">
+            <span class="icono-login"></span>
+            <h2>Iniciar Sesión</h2>
+            <p>Selecciona tu rol e ingresa tus datos</p>
+        </div>
+
+        <form class="formulario">
+            
+            <div class="grupo-roles">
+                <label><input type="radio" name="role" value="ventas" checked> Oficina</label>
+                <label><input type="radio" name="role" value="centro"> Centro Autorizado</label>
+                <label><input type="radio" name="role" value="cliente"> Cliente</label>
+            </div>
+
+            
+            <div class="campo">
+                <label for="usuario">Correo Electrónico / Usuario</label>
+                <input type="email" id="usuario" required>
+            </div>
+
+            
+            <div class="campo">
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" required>
+            </div>
+
+           
+            <div class="opciones">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            
+            <div class="campo">
+                <button type="submit" class="btn-login">Ingresar</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <p>© Made by JoyCode dev</p>
+</footer>
+
+</body>
+</html>

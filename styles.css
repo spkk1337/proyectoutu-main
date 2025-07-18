@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F5F5F5; /* fondo gris claro */
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #2E2E2E; /* gris oscuro */
+    color: white;
+    padding: 2rem 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logopagina {
+    width: 50px;
+    height: auto;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: Cambria, serif;
+}
+
+.btn-ingresar {
+    background-color: #C62828; /* rojo mecánico */
+    color: white;
+    font-family: "Jersey 10", sans-serif;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-ingresar:hover {
+    background-color: #B71C1C; /* rojo más oscuro */
+}
+
+.hero-banner {
+    background-image: url('img/background.jpg'); /* ← Cambiá esto por la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* oscurece la imagen para mejor contraste */
+    z-index: 1;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-contenido h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-contenido p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-consulta {
+    display: inline-block;
+    background-color: #C62828; /* rojo mecánico */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consulta:hover {
+    background-color: #B71C1C;
+    border-color: #f5f5f5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-contenido h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-contenido p {
+        font-size: 1.2rem;
+    }
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+
+.tarjeta img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    max-width: 100%;
+}
+
+.texto-hero {
+    max-width: 500px;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2E2E2E;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.seccion-titulo h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #2E2E2E;
+}
+
+.seccion-titulo p {
+    color: #666;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #C62828; /* rojo para iconos */
+}
+
+.icono-aceite::before {
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: url(img/mecanica.png) no-repeat center center / contain;
+    vertical-align: middle;
+}
+
+.icono-electronica::before {
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: url(img/electricidad.png) no-repeat center center / contain;
+    vertical-align: middle;
+}
+
+.icono-alineacion::before {
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: url(img/alineacion.png) no-repeat center center / contain;
+    vertical-align: middle;
+}
+
+/* Botones de módulo */
+.btn-modulo {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #C62828;
+    transition: background-color 0.3s;
+}
+
+.btn-modulo:hover {
+    background-color: #B71C1C;
+}
+
+/* Footer */
+.footer {
+    background-color: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}

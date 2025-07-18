@@ -1,0 +1,152 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2E2E2E; /* gris oscuro */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding: 2rem 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: Cambria, serif;
+}
+
+/* Login Main */
+.login-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Login Card */
+.login-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.icono-login::before {
+    content: \"\\21B5\"; /* ↵ */
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #C62828;
+}
+
+.login-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Formulario */
+.formulario .campo {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.formulario input[type=\"email\"],
+.formulario input[type=\"password\"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+.grupo-roles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.2rem;
+}
+
+.grupo-roles label {
+    font-size: 0.9rem;
+}
+
+/* Recordarme + Enlace */
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.opciones a {
+    text-decoration: none;
+    color: #C62828;
+}
+
+.opciones a:hover {
+    text-decoration: underline;
+}
+
+/* Botón */
+.btn-login {
+    background-color: #C62828;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #C62828;
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
