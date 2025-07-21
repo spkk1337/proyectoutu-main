@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel - Taller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Panel de Taller</h1>
+            <div class="user-info">
+                <a href="logout.php" class="logout-button">Cerrar Sesión</a>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+
+            <div class="card">
+                <h2>Buscar Vehículo</h2>
+                <form class="search-form" method="post">
+                    <input type="text" name="busqueda_vehiculo" placeholder="Buscar por Patente" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            
+            <!-- Esta sección aparecería al buscar un vehículo -->
+            <div class="card">
+                <h3>Registrar Service para Toyota Hilux (AA 123 BB)</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="fecha">Fecha del Service:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kilometraje">Kilometraje:</label>
+                        <input type="number" id="kilometraje" name="kilometraje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción del Trabajo Realizado:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado">
+                            <option value="en_proceso">En Proceso</option>
+                            <option value="completado">Completado</option>
+                            <option value="esperando_repuesto">Esperando Repuesto</option>
+                        </select>
+                    </div>
+                    <button type="submit">Guardar Service</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

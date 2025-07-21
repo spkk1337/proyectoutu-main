@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control - Oficina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Panel de Control de Oficinas</h1>
+             <div class="user-info">
+                <a href="logout.php" class="logout-button">Cerrar Sesión</a>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="card">
+                <h2>Búsqueda Global de Vehículos</h2>
+                <form class="search-form">
+                    <input type="text" placeholder="Ingresar patente" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+                <div class="card">
+                    <h2>Registrar Nuevo Vehículo en Garantía</h2>
+                    <form class="form-grid">
+                        <input type="text" placeholder="Patente" required>
+                        <input type="text" placeholder="Chasis" required>
+                        <input type="text" placeholder="Marca" required>
+                        <input type="text" placeholder="Modelo" required>
+                        <input type="number" placeholder="Año" required>
+                        <input type="text" placeholder="Nombre del Cliente" required>
+                        <button type="submit">Agregar Vehículo</button>
+                    </form>
+            </div>
+
+            <div class="card">
+                <h2>Garantías Pendientes de Aprobación</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Vehículo (Patente)</th>
+                            <th>Centro Autorizado</th>
+                            <th>Solicitud</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AC 456 DD</td>
+                            <td>Centro Sur</td>
+                            <td>Reemplazo de inyector</td>
+                            <td>18/07/2024</td>
+                            <td><button class="action-btn approve">Aprobar</button> <button class="action-btn deny">Rechazar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h2>Administrar Centros Autorizados</h2>
+                <table class="data-table">
+                     <thead>
+                        <tr>
+                            <th>Nombre del Centro</th>
+                            <th>Ubicación</th>
+                            <th>Contacto</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Centro Norte</td>
+                            <td>Av. Siempre Viva 123</td>
+                            <td>contacto@centronorte.com</td>
+                            <td><span class="status-active">Activo</span></td>
+                        </tr>
+                         <tr>
+                            <td>Centro Sur</td>
+                            <td>Calle Falsa 456</td>
+                            <td>contacto@centrosur.com</td>
+                            <td><span class="status-active">Activo</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <form class="form-grid">
+                    <input type="text" placeholder="Nombre del nuevo centro">
+                    <input type="text" placeholder="Ubicación">
+                    <input type="email" placeholder="Email de contacto">
+                    <button type="submit">Agregar Centro</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Gestión de Cuentas de Usuario</h2>
+
+                <!-- Formulario para crear una nueva cuenta -->
+                <h3>Crear Nueva Cuenta</h3>
+
+                
+                <form method="post">
+                    <div class="form-grid">
+                        <input type="text" name="nuevo_usuario" placeholder="Nombre de usuario" required>
+                        <input type="password" name="nueva_contrasena" placeholder="Contraseña" required>
+                        <select name="nuevo_rol" required>
+                            <option value="" disabled selected>Seleccionar Rol</option>
+                            <option value="oficina">Oficina</option>
+                            <option value="centro">Centro Autorizado</option>
+                            <option value="cliente">Cliente</option>
+            </div>                
+
+        </main>
+    </div>
+</body>
+<footer class="pie">Made by JoyCode dev</footer>
+</html>

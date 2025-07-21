@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal del Cliente - Garantías</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Portal del Cliente</h1>
+            <div class="user-info">
+                <a href="logout.php" class="logout-button">Cerrar Sesión</a>
+            </div>
+        </header>
+
+        <main class="dashboard-content">
+            <div class="card">
+                <h2>Busca tu Vehículo</h2>
+                <p>Ingresa la patente para ver el estado de tu garantía y los services realizados.</p>
+                <form class="search-form" method="post">
+                    <input type="text" name="busqueda_vehiculo" placeholder="Ingresa tu Patente aqui" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Esta sección aparecería después de una búsqueda exitosa -->
+            <div class="card">
+                <h3>Información de tu Vehículo</h3>
+                <div class="vehicle-details">
+                    <p><strong>Marca:</strong> Toyota</p>
+                    <p><strong>Modelo:</strong> Hilux</p>
+                    <p><strong>Año:</strong> 2023</p>
+                    <p><strong>Patente:</strong> AA 123 BB</p>
+                    <p><strong>Chasis:</strong> 123456789XYZ</p>
+                    <p><strong>Estado de Garantía:</strong> <span class="status-active">Activa</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Historial de Services y Reparaciones</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Centro Autorizado</th>
+                            <th>Descripción del Servicio</th>
+                            <th>Kilometraje</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/06/2024</td>
+                            <td>Centro Norte</td>
+                            <td>Service de los 10,000 km</td>
+                            <td>9,850 km</td>
+                            <td>Completado</td>
+                        </tr>
+                        <tr>
+                            <td>20/02/2024</td>
+                            <td>Centro Norte</td>
+                            <td>Cambio de aceite y filtros</td>
+                            <td>5,100 km</td>
+                            <td>Completado</td>
+                        </tr>
+                        <tr>
+                            <td>05/09/2023</td>
+                            <td>Oficina Central</td>
+                            <td>Entrega de unidad y activación de garantía</td>
+                            <td>10 km</td>
+                            <td>Completado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
