@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap');
 
 html {
     box-sizing: border-box;
@@ -122,7 +122,7 @@ body {
     border-color: #f5f5f5;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .hero-contenido h1 {
         font-size: 2.2rem;
@@ -334,7 +334,7 @@ body {
     cursor: pointer;
 }
 
-/* ✅ Estilos responsivos */
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -361,5 +361,65 @@ body {
         text-align: center;
     }
 }
+
+.contacto {
+    margin-top: 5rem;
+    padding: 0.55rem 0.85rem;
+    color: #2E2E2E;
+}
+
+.titulo-contacto {
+    padding-bottom: 6rem;
+    text-align: center;
+    font-family: 'Kanit';
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grupo-input {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.grupo-input input {
+    flex: 1 1 45%;
+}
+
+.btn-enviar {
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #B71C1C;
+}
+
+
+
 
 
